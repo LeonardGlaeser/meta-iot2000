@@ -89,7 +89,7 @@ Now run you can generate the desired image:
 $ docker run -v $(pwd):/shared-volume:rw -e USER_ID=$(id -u) --rm -t -i \
              --storage-opt size=50G kasproject/kas:latest sh -c "
       cd /shared-volume &&
-      git clone https://github.com/siemens/meta-iot2000 &&
+      git clone https://github.com/LeonardGlaeser/meta-iot2000.git &&
       kas build meta-iot2000/meta-iot2000-example/kas.yml"
 ```
 
